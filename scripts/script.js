@@ -1,15 +1,19 @@
 
-let nameRemedio = document.getElementById('nameRemedio');
-let totalRemedio = document.getElementById('totalRemedio');
-let avisoDeFim = document.getElementById('avisoFim')
-
 function verificarQuantidade() {
+    
+    
+let nameRemedio = document.getElementById('nameRemedio').value;
+let totaldeRemedio = parseInt(document.getElementById('totalRemedio').value);
+let avisoDeFim = document.getElementById('avisoFim');
 
-    if (totalRemedio < 10) {
-        alert(`teste 1`)
 
-    } else {
-        
-       let avisoDeFim = `teste ok`
-    }
+if (totaldeRemedio <= 5) {
+    alert("Atenção ! Estoque baixo !");
+    avisoDeFim.innerHTML =`Estoque de ${nameRemedio} está baixo !`;
+
+} else {
+    alert("Estoque normal !")
+   avisoDeFim.innerHTML = `Estoque de ${nameRemedio} está normal !`;
+
+}
 }

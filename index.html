@@ -7,14 +7,18 @@
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <h1>Lembrete Rémedios</h1>
-    <h3>Nome do Remédio :</h3>
-    <input type="text" id="nameRemedio">
-    <br>
-    <h3>Total de compimidos:</h3>
-    <input type="number" id="totalRemedio">
-    <br>
-    <p id="avisoFim">ok</p>
-    <button onclick="verificarQuantidade()"> Verificar quantidade</button>
+    <div class="container">
+        <h1>Lembrete Rémedios</h1>
+        <h3>Nome do Remédio :</h3>
+
+        <input type="text" id="nameRemedio">
+
+        <h3>Total de comprimidos:</h3>
+        <input type="number" id="totalRemedio">
+
+        <p id="avisoFim"> <> Estoque <> </p>
+
+        <button onclick="verificarQuantidade()"> Verificar Estoque</button>
+    </div>
 </body>
 </html>
