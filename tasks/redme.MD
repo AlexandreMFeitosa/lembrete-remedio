@@ -1,4 +1,6 @@
+ #LEMBRETE REMÉDIO
 
+ Sabemos que existe diversas formas e app de lembretes, muitos deles para trabalhos, aniversarios, reunioes, mas com pensamento para pessoas um pouco mais de idade ou até jovens meios esquecidos, esse lembrete será feito de forma mais simples possivel, para que em poucos cliques, ele consiga formalizar um lembrete referente a quantidades de remedios, teve um problema real comigo, que tomo minoxidil diariamente, e mesmo vendo o frasco esvaziando , não me lembrei de fazer um novo pedido, então creio eu que se chegasse algum aviso no celular ou em caso de pessoas mais idosos, chegasse até seus responsaveis que o remedio está acabando, ele iria se atentar e comprar o quanto antes para que não seja interrompido seu tratamento .
 
 
 TASKS 
