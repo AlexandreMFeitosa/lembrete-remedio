@@ -5,10 +5,24 @@
 
 TASKS 
 
-TASK 1 => Criar o index do projeto - FEITO - 10/02/2024
+TASK 1 => Criar o index do projeto!
+FEITO - 10/02/2024
 
-TASK 2 => Criar a logica, script do projeto - FEITO 15/02/2024
+TASK 2 => Criar a logica, script do projeto!
+FEITO 15/02/2024
 
-TASK 3 => Criar o botao pesquisar estoque e reset - FEITO - 18/02/2024
+TASK 3 => Criar o botao pesquisar estoque e reset!
+FEITO - 18/02/2024
 
-Proxima TASK => Caso o campo do nome e qtd de remedio estejam em branco, fazer um alert informando que o campo deve ser devidamente preenchido !
+TASK 4 => Caso o campo do nome e qtd de remedio estejam em branco, fazer um alert informando que o campo deve ser devidamente preenchido!
+FEITO - 03/03/2024
+
+TASK 5 => Fazer um botao de cadastro, ele vai receber o nome e quantidade de remedio e esses dados seram amarzenados no "localStorage" !
+FEITO - 03/03/2024
+
+PROXIMAS TASK => 
+
+- Atualizar a funcao reset, para uma forma mais simples ;
+
+- Criar um butao que reset os dados salvo no localStorage ;
+Por exemplo já tem uma quantidade de remedios salvos no local storage, agora quero um butao que apague esses dados ( pois está com dados testes) e queremos agora salvar dados reais.

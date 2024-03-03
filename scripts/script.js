@@ -1,5 +1,5 @@
 
-function verificarQuantidade() {
+function cadastrarEstoque() {
     
     
 let nameRemedio = document.getElementById('nameRemedio').value;
@@ -8,8 +8,19 @@ let avisoDeFim = document.getElementById('avisoFim');
 
 if(nameRemedio.length === 0 || isNaN(totaldeRemedio) ) {
     alert("Favor preencher os campos obrigatórios !")
-} else {
-    if (totaldeRemedio <= 5) {
+} else if (nameRemedio && totaldeRemedio) {
+    let medicamentos = JSON.parse(localStorage.getItem(`medicamentos`)) || [];
+
+    medicamentos.push({nameRemedio , totaldeRemedio});
+
+    localStorage.setItem('medicamentos', JSON.stringify(medicamentos));
+
+    localStorage.setItem('medicamentos', JSON.stringify(medicamentos));
+
+    alert(` Cadastrado com sucesso !`);
+    avisoDeFim.innerHTML = ` Cadastrado com sucesso !` ;
+
+    /* if (totaldeRemedio <= 5) {
         alert("Atenção ! Estoque baixo !");
         avisoDeFim.innerHTML =`Estoque de ${nameRemedio} está baixo ! 
         Total de comprimidos = <mark>${totaldeRemedio}</mark>`;
@@ -18,12 +29,36 @@ if(nameRemedio.length === 0 || isNaN(totaldeRemedio) ) {
         alert("Estoque normal !")
        avisoDeFim.innerHTML = `<strong>Estoque de ${nameRemedio} está normal ! 
        Total de comprimidos = <mark>${totaldeRemedio}</mark>`;
+    } */
+}
+
+}
+
+// Button de pesquisar estoque !
+
+function pesquisarEstoque() {
+    let nameRemedio = document.getElementById('nameRemedio').value;
+    let totaldeRemedio = parseInt(document.getElementById('totalRemedio').value);
+
+    console.log('Testando se está chamando a funcao !')
+
+    let verEstoque = document.getElementById('estoque')
+    let medicamentos = JSON.parse(localStorage.getItem('medicamentos')) || [];
+    let infoEstoque = "";
+
+    if(medicamentos.length > 0) {
+        
+        medicamentos.forEach(function(med) {
+            infoEstoque += `${med.totaldeRemedio} : ${med.totaldeRemedio} comprimidos`
+        });
+    } else {
+        infoEstoque.textContent = "O estoque está vazio !"
     }
+
+    verEstoque.textContent = infoEstoque;
 }
 
-}
 
-// Agora vou adicionar um botao, que ao clicar nele fará um reset, e todos os inputs anteriormente preenchidos ficaram em branco !
 
 
 function reset() {
