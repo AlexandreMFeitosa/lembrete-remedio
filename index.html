@@ -15,11 +15,22 @@
 
         <h3>Total de comprimidos:</h3>
         <input type="number" id="totalRemedio">
-
-        <p id="avisoFim"><> Estoque <></p>
-
-        <button onclick="verificarQuantidade()">Pesquisar Estoque</button>
-        <button onclick="reset()" >Nova Pesquisa</button>
+        <br>
+        <button onclick="cadastrarEstoque()">Cadastrar Estoque</button>
+        <div class="box-estoque">
+            <p id="avisoFim"></p>
+        </div>
+        <br>
+        <hr>
+        <div class="estoque">
+            <h2>Pesquisar Estoque</h2>
+    
+            <button onclick="pesquisarEstoque()" >Pesquisar Estoque</button>
+            <button onclick="reset()" >Nova Pesquisa</button>
+            <div class="vizualizar-estoque">
+                <p id="estoque"></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
