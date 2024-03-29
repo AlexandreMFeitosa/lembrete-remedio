@@ -20,9 +20,17 @@ FEITO - 03/03/2024
 TASK 5 => Fazer um botao de cadastro, ele vai receber o nome e quantidade de remedio e esses dados seram amarzenados no "localStorage" !
 FEITO - 03/03/2024
 
+TASK 6 => Atualizado a funcao reset, para uma forma mais simples ;
+
+TASKS 7 => Criar um botao que reset os dados salvo no localStorage ;
+ 
+TASKS 8 => Criar botao para limpar o localStorage ;
+
 PROXIMAS TASK => 
 
-- Atualizar a funcao reset, para uma forma mais simples ;
+ - Verificar a lista de remedios salvos no localStorage, se tiver como deixar menor, pois a lista é muito grande, por exemplo mostrar os 5 primeiros;
 
-- Criar um butao que reset os dados salvo no localStorage ;
-Por exemplo já tem uma quantidade de remedios salvos no local storage, agora quero um butao que apague esses dados ( pois está com dados testes) e queremos agora salvar dados reais.
+ - Se possivel também ,fazer um botao de pesquisa por nome,  que colocamos o nome do remedio e mostra a quantidade dele, somente dele e não a lista toda ;
+
+- Mostrar a soma dos remedios, por exemplo, se eu cadastrar dipirona mais de uma vez, no campo se eu pesquisar dipirona, ele mostrar a soma de todos os comprimidos de dipirona;
+- Css do projeto
