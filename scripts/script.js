@@ -49,16 +49,22 @@ function pesquisarEstoque() {
     if(medicamentos.length > 0) {
         
         medicamentos.forEach(function(med) {
-            infoEstoque += `${med.totaldeRemedio} : ${med.totaldeRemedio} comprimidos`
+            infoEstoque += `${med.nameRemedio} : ${med.totaldeRemedio} comprimidos. <br><br>`
         });
     } else {
         infoEstoque.textContent = "O estoque está vazio !"
     }
 
-    verEstoque.textContent = infoEstoque;
+    verEstoque.innerHTML = infoEstoque;
 }
 
+function limparEstoque() {
 
+    localStorage.removeItem('medicamentos');
+    let verEstoque = document.getElementById('estoque');
+
+    verEstoque.innerHTML = `Estoque limpo com sucesso !`;
+}
 
 
 function reset() {
@@ -74,7 +80,7 @@ let avisoDeFim = document.getElementById('avisoFim');
         document.getElementById('nameRemedio').value = '';
 
         document.getElementById('totalRemedio').value = '';
-        
+
         avisoDeFim.innerHTML = '<> Estoque <>'
     }
 
